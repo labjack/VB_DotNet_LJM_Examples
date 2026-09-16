@@ -42,8 +42,8 @@ Module ThermocoupleExampleInAmp
             ' Use the internal temp sensor for CJC
             Dim cjcName As String = "TEMPERATURE_DEVICE_K"
             ' TEMPERATURE_DEVICE_K can be used directly for CJC temperature
-            Dim cjcSlope As Integer = 1
-            Dim cjcOffset As Integer = 0
+            Dim cjcSlope As Double = 1
+            Dim cjcOffset As Double = 0
 
             Dim aNames() As String = {channelName, cjcName}
             Dim numFrames As Integer = aNames.Length

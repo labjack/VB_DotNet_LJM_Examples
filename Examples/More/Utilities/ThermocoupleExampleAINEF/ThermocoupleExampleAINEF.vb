@@ -20,8 +20,8 @@ Module ThermocoupleExampleAINEF
         ByVal tcType As Integer, _
         ByVal tempUnits As Integer, _
         ByVal cjcAddress As Integer, _
-        ByVal cjcSlope As Integer, _
-        ByVal cjcOffset As Integer)
+        ByVal cjcSlope As Double, _
+        ByVal cjcOffset As Double)
 
         Dim errorAddress As Integer
 
@@ -121,8 +121,8 @@ Module ThermocoupleExampleAINEF
             Else
                 cjcAddress = 60052 ' TEMPERATURE_DEVICE_K
             End If
-            Dim cjcSlope As Integer = 1 ' 55.56 for LM34
-            Dim cjcOffset As Integer = 0 ' 255.37 for LM34
+            Dim cjcSlope As Double = 1 ' 55.56 for LM34
+            Dim cjcOffset As Double = 0 ' 255.37 for LM34
 
             ' Setup the thermocouple AIN_EF
             SetupAIN_EF(handle, _

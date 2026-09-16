@@ -111,7 +111,7 @@ Module ThermocoupleExampleAINEF
 
             ' Type K thermocouple reading
             Dim tcType As Integer = LJM.CONSTANTS.ttK
-            Dim tempUnits = 0 '0=K, 1=°C, 2=°F
+            Dim tempUnits As Integer = 0 '0=K, 1=°C, 2=°F
 
             ' Use the internal temp sensor for CJC
             ' Note that register names can also be converted to their addresses
